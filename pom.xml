@@ -10,6 +10,7 @@
     </parent>
     <groupId>io.codil</groupId>
     <artifactId>bossio</artifactId>
+    <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>bossio</name>
     <description>Gated communities, condos, apartments and co-owned properties manager system.</description>
