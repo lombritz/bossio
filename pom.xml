@@ -76,23 +76,4 @@
         </repository>
     </repositories>
 
-    <profiles>
-        <profile>
-            <id>openshift</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-war-plugin</artifactId>
-                        <version>3.2.2</version>
-                        <configuration>
-                            <failOnMissingWebXml>false</failOnMissingWebXml>
-                            <outputDirectory>target</outputDirectory>
-                            <warName>ROOT</warName>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>
