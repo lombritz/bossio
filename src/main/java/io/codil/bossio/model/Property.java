@@ -3,9 +3,7 @@ package io.codil.bossio.model;
 import lombok.Data;
 import lombok.NonNull;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -20,5 +18,7 @@ public class Property {
     private String name;
 
     @NonNull
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id")
     private Address address;
 }
