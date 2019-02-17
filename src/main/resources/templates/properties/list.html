@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div th:each="property : ${properties}">
+    <p>Property: <br>
+        <strong th:text="${property.name}"></strong>
+    </p>
+    <p>
+        Address: <br>
+        <strong th:text="${property.address.number}"></strong>
+        <strong th:text="${property.address.street}"></strong>,<br>
+        <strong th:text="${property.address.postalCode}"></strong>,<br>
+        <strong th:text="${property.address.city}"></strong>,<br>
+        <strong th:text="${property.address.country}"></strong>.
+    </p>
+</div>
+To create a property click <a href="/properties/form">here</a>
+</body>
+</html>
