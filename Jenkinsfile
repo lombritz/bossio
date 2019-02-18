@@ -1,9 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'openshift/jenkins-slave-maven-centos7'
+      image 'maven:3-alpine'
     }
-
   }
   stages {
     stage('Test') {
